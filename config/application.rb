@@ -18,5 +18,11 @@ module Yumetter
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.time_zone = "Tokyo"
+
+    # デフォルトの言語を日本語に変更
+    config.i18n.default_locale = :ja
+    # localeファイルの読み込み設定
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end

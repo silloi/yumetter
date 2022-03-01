@@ -37,6 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_01_082349) do
     t.enum "gender", default: "other", enum_type: "user_gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "provider", null: false
     t.string "uid", null: false
     t.text "oauth_token", null: false
     t.datetime "oauth_expires_at", null: false

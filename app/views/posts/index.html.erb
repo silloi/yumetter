@@ -8,7 +8,7 @@
     <%= link_to "Sign out", signout_path, id: "sign_out" %>
 
     <div id="new" class="">
-      <%= render "form", post: @post %>
+      <%= render "form", post: @post, user: current_user %>
     </div>
   <% end %>
 

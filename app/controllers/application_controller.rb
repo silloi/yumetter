@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
 
   def authenticate
     return if logged_in?
-    redirect_to post_path, alert: "ログインしてください"
+    redirect_to posts_path, alert: "ログインしてください"
   end
 end
